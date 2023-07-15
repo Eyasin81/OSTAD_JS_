@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            border:1px solid white;
+            border-radius: 50%;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            color:white;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #id2{
+            border:1px solid white;
+            border-radius: 50%;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            color:white;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    #id3{
+            border:1px solid white;
+            border-radius: 50%;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            color:white;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+   <button id="id1" onclick="objClick()">Alert</button> <br>
+   <button id="id2" onclick="objConfirm()">Confirm</button> 
+   <button id="id3" onclick="objPromt()">Prompt</button> 
+   <button id="id3" onclick="objOpen()">Open</button> 
+   <button id="id3" onclick="objClose()">Close</button> 
+   <script>
+    function objClick(){
+        alert("Submit Success")
+    }
+    // confirm
+    function objConfirm(){
+     
+        var result=confirm("You press Ok")
+        document.write(result)
+ 
+      }
+
+    function objPromt(){
+    //   user input
+        var result=prompt("Do you want to Delete")
+        document.write(result)
+    }
+    // Open Method open new tap
+    function objOpen(){
+        open()
+    } 
+    //close method tap closed
+     function objClose(){
+        close()
+    }
+    // setTimeOut
+    setTimeout(function (param) { 
+        alert("your watching for 3 hours")
+     },1000)
+   </script>
+</body>
+</html>

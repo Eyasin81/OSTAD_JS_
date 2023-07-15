@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>ExcGetRequest</button>
+    <script>
+        // get method
+        
+//         function ExcGetRequest(){
+//     var URL="http://127.0.0.1:5500/index.html";
+//     var Configretion={method:"GET"}
+//     fetch(URL,Confgretion)
+//     .then(response=>response.json())
+//     .then(result=console.log(result))
+//     .catch(err=>console.log(err))
+// }
+// post method
+        
+        function ExcGetRequest(){
+    var URL="http://127.0.0.1:5500/index.html";
+    var BodyData={img:"123",Product:"123",ProductName:"abc"}
+    var Config={
+        method:"POST",
+        headers:{'accept':'application/json','content-type':'application/json'},
+        body:JSON.stringify(BodyData)
+    }
+    fetch(URL,Config)
+    .then(response=>response.json())
+    .then(result=console.log(result))
+    .catch(err=>console.log(err))
+}
+
+        </script>
+</body>
+</html>
